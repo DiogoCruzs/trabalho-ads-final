@@ -1,0 +1,29 @@
+<main>
+    <h1>{{titulo}}</h1>
+
+    <button id="btnMudarCor">Mudar Cor do Título</button>
+    
+    {{#if usuarioLogado}}
+        <div class="boas-vindas">
+            <h2>Seja bem-vindo(a), {{nome}}!</h2>
+            <p>Você está logado e pode ver conteúdo exclusivo.</p>
+        </div>
+    {{else}}
+        <div class="nao-logado">
+            <h2>Olá!</h2>
+            <p>Faça login para ver seu nome e mais conteúdo.</p>
+        </div>
+    {{/if}}
+
+    <section class="conteudos-lista">
+        <h3>Conteúdos Gerados pelo Controller:</h3>
+        
+        {{#each conteudos}}
+            <article class="item-conteudo">
+                <h4>{{this.texto}}</h4>
+                <p>ID: {{this.id}}</p>
+            </article>
+        {{/each}}
+    </section>
+
+</main>
