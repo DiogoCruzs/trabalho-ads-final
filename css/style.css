@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; 
     color: #333;
     padding: 20px;
 }
 
 main {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto; 
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
@@ -15,7 +15,7 @@ main {
 }
 
 h1 {
-    color: #007bff;
+    color: #007bff; /* Título azul */
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
 }
@@ -29,10 +29,81 @@ h1 {
     margin-bottom: 20px;
 }
 
+.nao-logado {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.conteudos-lista {
+    margin-top: 30px;
+}
+
 .item-conteudo {
     background-color: #e9ecef;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
     border-left: 5px solid #6c757d;
+}
+
+.btn-container {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#btnLogar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    background-color: #007bff; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#btnLogar:hover {
+    background-color: #0056b3; 
+}
+
+#btnLogar:active {
+    transform: scale(0.98); 
+}
+
+.main-nav {
+    background-color: #343a40;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #ffc107;
 }

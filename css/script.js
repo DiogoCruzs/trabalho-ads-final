@@ -1,21 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const titulo = document.querySelector('h1');
-
-    const botao = document.querySelector('#btnMudarCor'); 
-
-    titulo.style.color = 'blue'; 
+    const botao = document.querySelector('#btnLogar'); 
+    const logadoMsg = document.querySelector('#logado-msg'); 
+    const deslogadoMsg = document.querySelector('#deslogado-msg');
+    
+    let estaLogado = false; 
 
     botao.addEventListener('click', () => {
 
-        if (titulo.style.color === 'blue') {
-            titulo.style.color = 'red';
-            botao.textContent = 'Mudar para Azul';
+        estaLogado = !estaLogado; 
+
+        if (estaLogado) {
+            botao.textContent = 'Deslogar';
+            logadoMsg.style.display = 'block';
+            deslogadoMsg.style.display = 'none';
         } else {
-            titulo.style.color = 'blue';
-            botao.textContent = 'Mudar para Vermelho';
+            botao.textContent = 'Logar';
+            logadoMsg.style.display = 'none';
+            deslogadoMsg.style.display = 'block';
         }
     });
 
-    console.log("Script.js pronto para interagir.");
+    console.log("Simulação de Login/Deslogar ativada.");
 });

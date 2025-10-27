@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'css')));
 
-app.use('/', homeRoutes); 
+app.use('/', homeRoutes);
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);

@@ -1,8 +1,8 @@
 const homeController = {
     index: (req, res) => {
-        const dadosParaPagina = {
+        const dadosParaPagina = { 
             titulo: "Página Inicial do Meu Projeto ADS",
-            usuarioLogado: true,
+            usuarioLogado: false,
             nome: "Estudante ADS",
             conteudos: [
                 { id: 1, texto: "Conteúdo 1: Usando Array de Objetos" },
